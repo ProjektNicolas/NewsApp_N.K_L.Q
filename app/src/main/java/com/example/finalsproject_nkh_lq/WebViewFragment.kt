@@ -7,9 +7,12 @@ import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
-import com.example.finalsproject_nkh_lq.databinding.FragmentWebViewBinding
 
-class WebViewFragment : Fragment() {
+var Any.webViewClient: WebViewClient
+    get() {}
+    set(value) {}
+
+class WebViewFragment<WebViewFragmentArgs> : Fragment() {
 
     private var _binding: FragmentWebViewBinding? = null
     private val binding get() = _binding!!
@@ -28,7 +31,7 @@ class WebViewFragment : Fragment() {
 
         val url = args.url
         binding.webView.webViewClient = WebViewClient()
-        binding.webView.loadUrl(url)
+        binding.webView.loadUrl("https://example.com")
     }
 
     override fun onDestroyView() {
