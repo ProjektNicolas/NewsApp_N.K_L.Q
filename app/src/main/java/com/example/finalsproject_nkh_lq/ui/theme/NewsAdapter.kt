@@ -3,11 +3,8 @@ package com.example.finalsproject_nkh_lq
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.compose.ui.semantics.text
-import androidx.lifecycle.lifecycleScope
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import androidx.wear.compose.foundation.size
 import com.bumptech.glide.Glide
 import com.example.finalsproject_nkh_lq.databinding.NewsArticleItemBinding
 import kotlinx.coroutines.CoroutineScope

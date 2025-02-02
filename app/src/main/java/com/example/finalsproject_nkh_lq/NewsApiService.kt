@@ -11,4 +11,6 @@ interface NewsApiService {
         @Query("country") country: String = "us",
         @Query("apiKey") apiKey: String = "YOUR_API_KEY"
     ): Response<NewsApiResponse>
+
+    fun getTopHeadlines(): Any
 }

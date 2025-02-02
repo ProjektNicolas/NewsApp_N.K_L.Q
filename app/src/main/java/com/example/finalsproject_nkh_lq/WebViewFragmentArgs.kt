@@ -45,12 +45,12 @@ class WebViewFragment<WebViewFragmentArgs>() : Fragment(), Parcelable {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<WebViewFragment<Any?>> {
-        override fun createFromParcel(parcel: Parcel): WebViewFragment<Any?> {
-            return WebViewFragment(parcel)
+    companion object CREATOR : Parcelable.Creator<FragmentWebViewBinding<Any?>> {
+        override fun createFromParcel(parcel: Parcel): FragmentWebViewBinding<Any?> {
+            return FragmentWebViewBinding(parcel)
         }
 
-        override fun newArray(size: Int): Array<WebViewFragment<Any?>?> {
+        override fun newArray(size: Int): Array<FragmentWebViewBinding<Any?>?> {
             return arrayOfNulls(size)
         }
     }
