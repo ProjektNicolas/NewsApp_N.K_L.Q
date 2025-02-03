@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/webViewFragment"
-        android:name="com.example.finalsproject_nkh_lq.WebViewFragment"
+        android:name="com.example.finalsproject_nkh_lq.FragmentWebViewBinding"
         android:label="fragment_web_view"
         tools:layout="@layout/fragment_web_view" >
         <action

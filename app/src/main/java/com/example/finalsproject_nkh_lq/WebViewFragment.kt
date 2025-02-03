@@ -1,6 +1,7 @@
 package com.example.finalsproject_nkh_lq
 
 import android.os.Bundle
+import android.os.Parcel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +13,7 @@ var Any.webViewClient: WebViewClient
     get() {}
     set(value) {}
 
-class WebViewFragment<WebViewFragmentArgs> : Fragment() {
+class WebViewFragment<WebViewFragmentArgs>(parcel: Parcel) : Fragment() {
 
     private var _binding: FragmentWebViewBinding? = null
     private val binding get() = _binding!!

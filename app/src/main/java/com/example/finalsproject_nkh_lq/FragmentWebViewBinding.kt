@@ -6,23 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
+import com.example.finalsproject_nkh_lq.databinding.FragmentWebViewBinding // Ensure correct import
 
-private var Any.javaScriptEnabled: Boolean
-    get() {
-        TODO("Not yet implemented")
-    }
-    set(value) {}
-private val Any.settings: Any
-    get() {
-        TODO("Not yet implemented")
-    }
-private val Any.webView: Any
-    get() {
-        TODO("Not yet implemented")
-    }
+class FragmentWebViewBinding : Fragment() {
 
-class WebViewFragment : Fragment() {
-
+    val webView: Any
     private var _binding: FragmentWebViewBinding? = null
     private val binding get() = _binding!!
 
@@ -37,32 +25,15 @@ class WebViewFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.webView.webViewClient = WebViewClient()
-        binding.webView.settings.javaScriptEnabled = true
-        binding.webView.loadUrl("https://example.com") // Replace with dynamic URL
+        binding.webView.apply {
+            webViewClient = WebViewClient()
+            settings.javaScriptEnabled = true
+            loadUrl("https://example.com") // Replace with actual URL
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null // Prevent memory leaks
     }
-}
-
-private fun Any.loadUrl(s: String) {
-    TODO("Not yet implemented")
-}
-
-abstract class FragmentWebViewBinding {
-    abstract val root: View?
-
-    companion object {
-        fun inflate(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            b: Boolean
-        ): FragmentWebViewBinding? {
-            TODO("Not yet implemented")
-        }
-    }
-
 }
