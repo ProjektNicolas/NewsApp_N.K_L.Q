@@ -29,9 +29,9 @@ class WebViewFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): View? {
         _binding = FragmentWebViewBinding.inflate(inflater, container, false)
-        return binding.root
+        return binding.root!!
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

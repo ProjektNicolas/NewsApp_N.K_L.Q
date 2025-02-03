@@ -1,5 +1,14 @@
 package com.example.finalsproject_nkh_lq
 
+private val Any.articles: List<ApiArticle>?
+    get() {
+        TODO("Not yet implemented")
+    }
+private val Any.isSuccessful: Boolean
+    get() {
+        TODO("Not yet implemented")
+    }
+
 class NewsRepository {
     private val newsApiService = RetrofitClient.newsApiService
 
@@ -19,4 +28,12 @@ class NewsRepository {
             throw Exception("Error fetching news")
         }
     }
+}
+
+private fun Any.body(): Any {
+    TODO("Not yet implemented")
+}
+
+private fun Any.getTopHeadlines(): Any {
+    TODO("Not yet implemented")
 }

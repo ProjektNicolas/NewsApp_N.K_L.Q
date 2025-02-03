@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.finalsproject_nkh_lq"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.finalsproject_nkh_lq"
@@ -26,6 +26,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    buildFeatures {
+        dataBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
