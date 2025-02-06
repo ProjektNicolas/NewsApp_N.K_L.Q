@@ -3,6 +3,7 @@ package com.example.finalsproject_nkh_lq
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -40,7 +41,7 @@ class NewsAdapter(
             .into(holder.binding.articleImageView)
 
         holder.itemView.setOnClickListener {
-            val action = HomeFragmentDirections.actionHomeFragmentToWebViewFragment(article.url)
+            val action = HomeFragment.actionHomeFragmentToWebViewFragment(article.url)
             holder.itemView.findNavController().navigate(action)
         }
 
@@ -72,4 +73,8 @@ class NewsAdapter(
     }
 
     override fun getItemCount(): Int = articles.size
+}
+
+private fun NavController.navigate(action: Any) {
+        TODO("Not yet implemented")
 }

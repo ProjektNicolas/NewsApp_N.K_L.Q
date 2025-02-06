@@ -1,3 +1,5 @@
+@file:Suppress("UNREACHABLE_CODE")
+
 package com.example.finalsproject_nkh_lq
 
 import android.os.Bundle
@@ -9,8 +11,9 @@ import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 
-var Any.webViewClient: WebViewClient
-    get() {}
+
+private var Any.webViewClient: Unit
+    get() = Unit
     set(value) {}
 
 class WebViewFragment<WebViewFragmentArgs>(parcel: Parcel) : Fragment() {
@@ -31,12 +34,15 @@ class WebViewFragment<WebViewFragmentArgs>(parcel: Parcel) : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val url = args.url
-        binding.webView.webViewClient = WebViewClient()
-        binding.webView.loadUrl("https://example.com")
+        binding.webView.loadUrl("https://example.com").also { binding.webView.webViewClient = it }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+}
+
+private fun Any.loadUrl(s: String) {
+            TODO("Not yet implemented")
 }

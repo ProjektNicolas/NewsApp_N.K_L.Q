@@ -12,6 +12,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.finalsproject_nkh_lq.databinding.FragmentFavoritesBinding
 import kotlinx.coroutines.launch
 
+private val Any.favoritesRecyclerView: Any
+    get() {
+        TODO("Not yet implemented")
+    }
+
 class FavoritesFragment : Fragment() {
 
     private var _binding: FragmentFavoritesBinding? = null

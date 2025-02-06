@@ -11,7 +11,7 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.navigation.fragment.navArgs
 
-private val <WebViewFragmentArgs> WebViewFragmentArgs.url: String
+val <WebViewFragmentArgs> WebViewFragmentArgs.url: String
     get() {
         TODO("Not yet implemented")
     }

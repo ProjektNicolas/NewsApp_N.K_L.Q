@@ -11,6 +11,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.finalsproject_nkh_lq.databinding.FragmentHomeBinding
 import kotlinx.coroutines.launch
 
+private val Any.newsRecyclerView: Any
+    get() {
+        TODO("Not yet implemented")
+    }
+
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -60,5 +65,11 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    companion object {
+        fun actionHomeFragmentToWebViewFragment(url: String): Any {
+            TODO("Not yet implemented")
+        }
     }
 }
