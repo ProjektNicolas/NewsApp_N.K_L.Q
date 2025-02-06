@@ -3,11 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/newsRecyclerView"
+    tools:context=".HomeFragment"
+    android:background="@color/purple_200">
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_home_24">
+
+        </ImageView>
+        <Button
+            android:background="@color/teal_700"
+            android:text="donal trump...">
+
+
+        </Button>
+
+    </TableLayout>
+
 
 </FrameLayout>

@@ -10,7 +10,8 @@ import com.example.finalsproject_nkh_lq.databinding.FragmentWebViewBinding // En
 
 class FragmentWebViewBinding : Fragment() {
 
-    val webView: Any
+    val root: View? = null
+    val webView: Any = TODO()
     private var _binding: FragmentWebViewBinding? = null
     private val binding get() = _binding!!
 
@@ -35,5 +36,15 @@ class FragmentWebViewBinding : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null // Prevent memory leaks
+    }
+
+    companion object {
+        fun inflate(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            b: Boolean
+        ): com.example.finalsproject_nkh_lq.FragmentWebViewBinding? {
+            TODO("Not yet implemented")
+        }
     }
 }

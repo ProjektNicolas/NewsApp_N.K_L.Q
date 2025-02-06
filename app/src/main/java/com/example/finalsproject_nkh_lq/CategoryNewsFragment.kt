@@ -8,8 +8,24 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.viewbinding.ViewBinding
 import com.example.finalsproject_nkh_lq.databinding.FragmentCategoryNewsBinding
 import kotlinx.coroutines.launch
+
+var Any.layoutManager: LinearLayoutManager
+    get() {
+        TODO("Not yet implemented")
+    }
+    set(value) {}
+var Any.adapter: NewsAdapter
+    get() {
+        TODO("Not yet implemented")
+    }
+    set(value) {}
+private val ViewBinding.categoryNewsRecyclerView: Any
+    get() {
+        TODO("Not yet implemented")
+    }
 
 class CategoryNewsFragment : Fragment() {
 

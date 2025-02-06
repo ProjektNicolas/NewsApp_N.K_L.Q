@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="8dp">
 
@@ -27,7 +27,11 @@
                     android:id="@+id/articleImageView"
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:scaleType="centerCrop" />
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+
+                    android:src="@mipmap/ic_banner_foreground"
+                    tools:src="@mipmap/ic_banner_foreground" />
 
                 <ImageButton
                     android:id="@+id/favoriteButton"
@@ -38,7 +42,8 @@
                     android:contentDescription="@string/add_to_favorites"
                     android:minWidth="48dp"
                     android:minHeight="48dp"
-                    android:padding="8dp" />
+                    android:padding="8dp"
+                    android:src="@drawable/ic_favorite" />
 
             </FrameLayout>
 
@@ -47,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Title"
+                android:text="@string/donald_trump_elected_as_president"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -56,7 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="Description" />
+                android:text="@string/donald_trump_wins_another_election_beating_kamala_haris_he_became_47th_us_president" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </layout>
